@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $width-desktop;
+  height: 70px;
+  padding: $desk-pad;
+  margin: 0 auto;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+
+  &__logo {
+    height: 15px;
+
+    &__img {
+      height: 100%;
+    }
+  }
+
+  &__delivery-form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    &__text {
+      width: 15px;
+      padding: 0 10px;
+      font-family: $main-ff;
+      font-weight: $fw-sm;
+      font-size: $fs-lg;
+      line-height: $lh-lg;
+      color: $color-text-secondary;
+    }
+  }
+
+  &__delivery-time {
+    box-sizing: border-box;
+    width: 65px;
+    height: 40px;
+    border: 1px solid $color-primary-bright;
+    border-radius: 2px;
+    outline-color: $color-secondary;
+
+    @include hover-transition(border, 1px solid $color-secondary);
+  }
+
+  &__delivery-address {
+    display: flex;
+    box-sizing: border-box;
+    width: 290px;
+    height: 40px;
+    border: 1px solid $color-primary-bright;
+    border-radius: 2px;
+
+    @include hover-transition(border, 1px solid $color-secondary);
+
+    &__img {
+      height: 15px;
+      padding: 12px;
+
+      @include hover-transition(transform, translateY(-5px));
+    }
+
+    &__label {
+      width: 100%;
+      padding: 5px 0;
+      outline: none;
+    }
+
+    &__input {
+      width: 100%;
+      border: none;
+      font-family: $main-ff;
+      font-size: $fs-lg;
+      line-height: $lh-xl;
+      color: $color-text-primary;
+      outline: none;
+    }
+  }
+
+  &__buttons-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80px;
+    height: 40px;
+    border-radius: 2px;
+    font-family: $main-ff;
+    font-weight: $fw-lg;
+    font-size: $fs-sm;
+    line-height: $lh-xl;
+    text-decoration: none;
+
+    &--sign-in {
+      border: 1px solid $color-primary-bright;
+      color: $color-text-primary;
+
+      @include hover(background-color, $color-primary);
+      @include hover(color, $color-white);
+      @include hover(border, none);
+    }
+
+    &--register {
+      background-color: $color-primary;
+      color: $color-white;
+
+      @include hover(background-color, $color-white);
+      @include hover(color, $color-text-primary);
+      @include hover(border, 1px solid $color-primary-bright);
+    }
+  }
+
+  &__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include hover-transition(transform, translateY(-5px));
+  }
+}

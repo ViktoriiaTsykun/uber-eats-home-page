@@ -1,5 +1,25 @@
 @mixin hover($_property, $_toValue) {
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin hover-transition($_property, $_toValue) {
   transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin active($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin hover-transition-card($_property, $_toValue) {
+  transition: #{$_property} 1s;
   &:hover {
     #{$_property}: $_toValue;
   }

@@ -1,0 +1,59 @@
+.content {
+  width: $width-desktop;
+  margin: 0 auto 80px;
+  padding: $desk-pad;
+
+  &__heading {
+    margin: 55px 0 15px;
+    font-family: $main-ff;
+    font-weight: $fw-md;
+    font-size: $fs-xl;
+    line-height: $lh-heading;
+    color: $color-text-primary;
+  }
+}
+
+.content-container {
+  display: grid;
+  grid-template: repeat(3, $card-height) / repeat(auto-fill, $card-width);
+  grid-gap: $card-gap;
+}
+
+.content-card {
+  @include hover-transition-card(transform, translateY(-15px));
+
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    margin: 15px 0 5px;
+    font-family: $main-ff;
+    font-weight: $fw-md;
+    font-size: $fs-lg;
+    line-height: $lh-xl;
+    color: $color-text-primary;
+  }
+
+  &__details {
+    margin-bottom: 5px;
+    font-family: $main-ff;
+    font-weight: $fw-md;
+    font-size: $fs-md;
+    line-height: $lh-card;
+    color: $color-text-secondary;
+  }
+
+  &__delivery-time {
+    font-family: $main-ff;
+    font-weight: $fw-md;
+    font-size: $fs-sm;
+    line-height: $lh-card;
+    color: $color-text-primary;
+  }
+}
