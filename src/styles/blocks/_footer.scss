@@ -1,11 +1,29 @@
 .footer {
   width: 100vw;
   background: $color-primary;
+  position: relative;
+
+  &__btn-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 25px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    background-color: $color-secondary-light;
+    border-radius: 2px;
+    position: absolute;
+
+    &__img {
+      @include hover-transition(transform, rotateZ(360deg));
+    }
+  }
 }
 
 .footer-wrap {
   display: grid;
-  grid-template: 115px 220px 120px 95px / $width-desktop;
+  grid-template: 115px 220px 120px 95px / #{$width-desktop};
   width: $width-desktop;
   height: 550px;
   margin: 0 auto;
@@ -190,7 +208,6 @@
       font-size: $fs-xs;
       line-height: $lh-sm;
       color: $color-white;
-      text-decoration: none;
     }
   }
 

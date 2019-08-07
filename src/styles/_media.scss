@@ -1,10 +1,11 @@
 @media (max-width: 1023px) {
   .header {
     max-width: $width-tablet;
-    padding: 0;
+    padding: 0 10px;
 
     &__logo {
       height: 11px;
+      margin-right: 5px;
     }
 
     &__delivery-form {
@@ -31,7 +32,7 @@
 
   .search-form {
     max-width: $width-tb-search;
-    padding: 0;
+    padding: 0 10px;
   }
 
   .content {
@@ -64,7 +65,7 @@
 @media (max-width: 639px) {
   .header {
     min-width: $width-mobile;
-    padding: 0 5px 0 10px;
+    padding: 0 10px;
 
     &__logo {
       height: 11px;
@@ -88,7 +89,7 @@
 
   .search-form {
     min-width: $width-mb-content;
-    padding: 0;
+    padding: 0 10px;
   }
 
   .search-container {
@@ -125,8 +126,14 @@
     }
   }
 
-  .footer-wrap {
+  .footer {
+    &__btn-up {
+      width: 65px;
+      height: 65px;
+    }
+  }
 
+  .footer-wrap {
     width: $width-mobile;
     height: 860px;
     grid-template: 115px 490px 85px 170px / 1fr;

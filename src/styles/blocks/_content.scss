@@ -20,7 +20,7 @@
 }
 
 .content-card {
-  @include hover-transition-card(transform, translateY(-15px));
+  @include hover-transition(transform, scale(1.05));
 
   &__link {
     display: block;
