@@ -1,6 +1,5 @@
 @media (max-width: 1023px) {
   .header {
-    max-width: $width-tablet;
     padding: 0 10px;
 
     &__logo {
@@ -64,7 +63,6 @@
 
 @media (max-width: 639px) {
   .header {
-    min-width: $width-mobile;
     padding: 0 10px;
 
     &__logo {
