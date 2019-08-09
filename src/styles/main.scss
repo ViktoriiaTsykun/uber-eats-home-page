@@ -1,7 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext");
+
 @import "utils";
-@import "fonts";
-@import "typography";
+
+@import "blocks/header";
+@import "blocks/search-form";
+@import "blocks/content";
+@import "blocks/footer";
+@import "media";
 
 body {
-  background: $c-gray;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }

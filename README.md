@@ -9,4 +9,4 @@
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+- [UBER EATS](https://viktoriiatsykun.github.io/uber-eats-home-page/)
